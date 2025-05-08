@@ -1,0 +1,13 @@
+ h1 {
+    font-family: 'Cal Sans', sans-serif;
+    color: black;
+    background: yellow;
+ }
+
+ h1 span {
+    color: blue;
+ }
+
+ .navigation {
+    display: flex;
+ }
