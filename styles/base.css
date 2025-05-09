@@ -65,17 +65,26 @@
 
  #country {
     text-align: center;
-    border-bottom: 2px solid blue;
+    border-bottom: 0.5px solid blue;
     font-family: 'Cal Sans', sans-serif;    
  }
 
- .country img {
+ .country img,
+ .me img {
     max-width: 200px;
     max-height: auto;
  }
 
  figcaption {
     text-align: center;
+ }
+
+ .me {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 40px;
+    padding-left: 10px;
+    gap: 20px;
  }
 
  ul {
