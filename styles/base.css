@@ -1,7 +1,11 @@
- h1 {
+ h1,
+ footer {
     font-family: 'Cal Sans', sans-serif;
     color: black;
     background: yellow;
+    text-align: center;
+    padding: 20px;
+    margin: 0%;
  }
 
  h1 span {
@@ -10,4 +14,74 @@
 
  .navigation {
     display: flex;
+    justify-content: space-around;
+    background: black;
+    padding: 10px;
+    margin-top: 0%;
+ }
+
+ .navigation a {
+    color: yellow;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .navigation a:hover {
+    border-top: 2px solid white;
+ }
+
+ main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+ }
+
+ .card {
+    border: 1px solid blue;
+    margin: 20px;
+ }
+
+ .card h2:not(#country) {
+    font-family: 'Cal Sans', sans-serif;
+    color: black;
+    background: yellow;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0%;
+    border: 1px solid blue;
+ }
+ .card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.8;
+ }
+
+ .country {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ #country {
+    text-align: center;
+    border-bottom: 2px solid blue;
+    font-family: 'Cal Sans', sans-serif;    
+ }
+
+ .country img {
+    max-width: 200px;
+    max-height: auto;
+ }
+
+ figcaption {
+    text-align: center;
+ }
+
+ ul {
+    margin: 50% 0;
+ }
+
+ li {
+    line-height: 1.8;
  }
