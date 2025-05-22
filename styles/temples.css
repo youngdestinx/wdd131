@@ -1,0 +1,123 @@
+/* Set the universal selector to border box to make the entire page responsive and easily designed */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Let the entire page have just one font: Roboto and center align the text.*/
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+/* Mobile view ***************************************/
+
+/* Add the hamburger icon to the anchor tag on the HTML */
+#menu::before {
+    content: "≡";
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Hide the navigation links; so on mobile view; the user sees only the hambuger icon.*/
+li {
+    display: none;
+}
+
+/* Display the navigation links; when the user click on the hamburger icon and close the links when the user click
+on "X". and design them */
+.show li {
+    display: block;
+    
+}
+
+#menu.show::before {
+    content: "X";
+    color: white;
+}
+
+/* Display the header children side by side, with spaces between them and design it. */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 3rem;
+    padding: 1rem;
+    font-size: 3rem;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: purple;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Design the navigation menu */
+nav {
+    background-color: #36454f;
+    grid-column: 1/3;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: black;
+    color: white;
+}
+
+.active {
+    color: yellow;
+}
+
+nav a:visited {
+    color: aqua;
+}
+
+nav a:link {
+    color: white;
+}
+
+header.show div {
+    visibility: hidden;
+    background-color: none;
+}
+/* Center the main element horizontally and give it a limited height. */
+header,
+main,
+footer {
+    margin: 2rem auto;
+    max-width: 640px;
+}
+
+/* Layout the images in a single column. */
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section img {
+    padding-top: 2rem;
+}
+
+/* Design footer as given in the sample screenshot. */
+
+footer {
+    padding: 1rem;
+    background-color: purple;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
