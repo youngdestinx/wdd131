@@ -42,9 +42,8 @@ on "X". and design them */
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 3rem;
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     justify-content: space-around;
     padding: 1rem;
     background-color: purple;
@@ -91,9 +90,8 @@ nav a:link {
     color: white;
 }
 
-header.show div {
+header.show h1 {
     visibility: hidden;
-    background-color: none;
 }
 /* Center the main element horizontally and give it a limited height. */
 header,
@@ -111,6 +109,7 @@ section {
 
 section img {
     padding-top: 2rem;
+    max-width: 640px;
 }
 
 /* Design footer as given in the sample screenshot. */
