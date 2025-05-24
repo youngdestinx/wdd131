@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <meta name="author" content="Destiny Linus - WDD 131 - Dynamic Web Fundamentals">
+    <meta name="description" content="This is WDD 131 Week 3 project assignment on Place design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="./scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/africa-large.webp" media="(min-width: 1920px)">
+                <source srcset="images/africa-medium.webp" media="(min-width: 1280px)">
+                <img src="images/africa-small.webp" alt="Nigeria Cultural Dress" width="640" height="640">
+            </picture>
+        </section>
+
+        <section class="weather">
+            <div>
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area: </strong></li><li>587,041 sq km</li>
+                    <li><strong>Population: </strong></li><li>27,691,018l</li>
+                    <li><strong>Capital: </strong></li><li>Abuja</li>
+                    <li><strong>Language: </strong></li><li>English</li>
+                    <li><strong>Currreny: </strong></li><li>Naira</li>
+                    <li><strong>Time Zone: </strong></li><li>UTC+3</li>
+                    <li><strong>Calling Code: </strong></li><li>+234</li>
+                    <li><strong>Internet TLD: </strong></li><li>.mg</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="Weather icon">
+                <ul>
+                    <li><strong>Temperature: </strong></li><li>10⁰Cs</li>
+                    <li><strong>Conditions: </strong></li><li>Partly Cloudy</li>
+                    <li><strong>Wind: </strong></li><li>5km/h</li>
+                    <li id="wind-chill"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🎈 Linus Destiny 🎈 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
