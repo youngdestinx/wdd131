@@ -5,12 +5,13 @@
 }
 
 :root {
-    --bord: "Roboto", sans-serif 
+    --bord: "Roboto", sans-serif;
+    --deb: center;
 }
 
 body {
     font-family: var(--bord);
-    text-align: center;
+    text-align: var(--deb);
 }
 
 header,
