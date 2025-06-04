@@ -1,0 +1,50 @@
+@media only screen and (min-width: 40em) {
+    header,
+    main,
+    footer {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 2rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        background-color: transparent;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav li {
+       display: block; 
+       flex: 1 1 100%;
+    }
+
+    nav a {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.3rem;
+    } 
+    
+    section img {
+        width: 20rem;
+    }
+
+}
