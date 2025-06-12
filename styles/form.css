@@ -5,12 +5,12 @@
 }
 
 :root {
-    ---primary-color: #f7dc67;
-    ---secondary-color: #003300;
-    ---text-color: #000000;
-    ---background-color: #f5f5dc;
-    ---heading-typography: "Montserrat";
-    ---body-typography: "Open Sans";
+    --primary-color: #f7dc67;
+    --secondary-color: #003300;
+    --text-color: #000000;
+    --background-color: #f5f5dc;
+    --heading-typography: "Montserrat";
+    --body-typography: "Open Sans";
 }
 
 header,
@@ -22,17 +22,17 @@ footer {
 
 header,
 footer {
-    background-color: var(---secondary-color);
-    color: var(---background-color);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
     text-align: center;
-    border: 1px solid var(---text-color);
+    border: 1px solid var(--text-color);
     border-radius: 6px;
-    font-family: var(---heading-typography);
+    font-family: var(--heading-typography);
 }
 
 main {
-    background-color: var(---background-color);
-    border: 1px solid var(---text-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
     border-radius: 6px;
     margin: 1rem 0;
 }
@@ -42,7 +42,7 @@ div,
 textarea {
     display: block;
     margin-left: 3rem;
-    font-family: var(---body-typography);
+    font-family: var(--body-typography);
     font-weight: 400;
 }
 
@@ -68,7 +68,7 @@ input[type="date"] {
     margin-top: .1rem;
     width: 100%;
     max-width: 400px;
-    color: var(---secondary-color);
+    color: var(--secondary-color);
 }
 
 input[type="submit"] {
@@ -78,8 +78,8 @@ input[type="submit"] {
     max-width: 500px;
     border: 1.5px solid blue;
     border-radius: 6px;
-    background-color: var(---secondary-color);
-    color: var(---background-color);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
 }
 
 input[type="date"] {

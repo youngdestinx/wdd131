@@ -3,24 +3,24 @@
 }
 
 :root {
-    ---primary-color: #f7dc67;
-    ---secondary-color: #003300;
-    ---text-color: #000000;
-    ---background-color: #f5f5dc;
-    ---heading-typography: "Montserrat";
-    ---body-typography: "Open Sans";
+    --primary-color: #f7dc67;
+    --secondary-color: #003300;
+    --text-color: #000000;
+    --background-color: #f5f5dc;
+    --heading-typography: "Montserrat";
+    --body-typography: "Open Sans";
 }
 
 main {
-    background-color: var(---background-color);
+    background-color: var(--background-color);
     margin: 2rem 0;
     padding: 2rem;
 }
 
 h1  {
-    font-family: var(---heading-typography);
+    font-family: var(--heading-typography);
 }
 
 p {
-    font-family: var(---body-typography);
+    font-family: var(--body-typography);
 }
