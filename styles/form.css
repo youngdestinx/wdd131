@@ -103,6 +103,20 @@ section div {
     color: blue;
 }
 
+@media only screen and (max-width: 40em){
+    * {
+    box-sizing: border-box;
+    max-width: 480px;
+    margin: 1rem auto;
+    }
 
+    main {
+        max-width: 400px;
+    }
+    
+    textarea {
+        max-width: 400px;
+    }
+}
 
 
