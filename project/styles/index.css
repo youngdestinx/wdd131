@@ -1,0 +1,120 @@
+/* Set the universal selector to border box to make the entire page responsive and easily designed */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f7dc67;
+    --secondary-color: #003300;
+    --text-color: #000000;
+    --background-color: #f5f5dc;
+    --heading-typography: "Montserrat";
+    --body-typography: "Open Sans";
+}
+
+header,
+main,
+footer {
+    margin: .75rem auto;
+    max-width: 480px;
+}
+nav {
+    margin: -1rem auto 0rem auto;
+    max-width: 480px;
+}
+
+header,
+footer {
+    padding: 1rem;
+    font-family: var(--heading-typography);
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    text-align: center;
+    border: 2px solid var(--text-color);
+    border-radius: 8px;
+}
+
+h2,
+footer p {
+    color: var(--background-color);
+    font-family: var(--body-typography);
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: center;
+    padding: .5rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    font-family: var(--heading-typography);
+    background: var(--primary-color);
+}
+
+li a {
+    text-decoration: none;    
+}
+
+li a:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+li a:visited {
+    color: var(--secondary-color);
+}
+
+picture {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    
+}
+
+blockquote {
+    position: absolute;
+    top: 12rem;
+    line-height: 1.8;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--body-typography);
+}
+
+@media only screen and (min-width: 40em) {
+    header,
+    main,
+    footer {
+    margin: .75rem auto;
+    max-width: 100%;
+    border: none;
+    border-radius: none;
+    }
+
+    nav {
+    margin: -1rem auto 0rem auto;
+    max-width: 100%;
+    border: none;
+    border-radius: none;
+    }
+
+    picture {
+        left: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    picture::after {
+        content: 
+            url(../images/cup-chips-small.jpg);
+            grid-row: 2;
+            grid-column: 2;
+    }
+
+    blockquote {
+        left: 5rem;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uduak Plantain Chips | Sign Up Form</title>
+    <meta name="author" content="Destiny Linus - WDD 131 - Dynamic Web Fundamentals">
+    <meta name="description" content="Sign Up Form for Uduak Plantain Chips.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/sign-up.css">
+    <script src="./scripts/sign-up.js" defer></script>
+</head>
+<body>
+   <header>
+        <h1>Uduak Chips</h1>
+        <h2>Every bite comes with happiness.😊</h2>
+   </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+        </ul>
+   </nav>
+   
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Sign Up Form</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Whatsapp Number*<input type="tel" name="phone" placeholder="00023456782" required></label>
+                <label>Email<input type="email" name="email" placeholder="someone@required.com"></label>
+                <label>Contact YOU?
+                    <select name="pname" id="pname">
+                        <option value="">Select a Frequency</option>
+                    </select>
+                </label>
+            </fieldset>
+            <input type="submit" value="Sign Up">
+
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> &bull; Uduak Chips &bull; Nigeria</p>
+        <p id="lastModified"></p>
+   </footer>
+</body>
+</html>
